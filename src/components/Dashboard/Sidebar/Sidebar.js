@@ -9,7 +9,7 @@ const Sidebar = () => {
 
     // useEffect(() => {
         
-    //     fetch('http://dry-savannah-42449.herokuapp.com/isAdmin', {
+    //     fetch('https://dry-savannah-42449.herokuapp.com/isAdmin', {
     //         method: 'POST',
     //         headers: { 'Content-Type': 'application/json' },
     //         body: JSON.stringify( {email:loggedInUser})

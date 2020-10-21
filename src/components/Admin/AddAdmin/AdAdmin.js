@@ -7,7 +7,7 @@ const AdAdmin = () => {
     
    const handleSubmit = (e) =>{
     e.preventDefault();
-    fetch('http://dry-savannah-42449.herokuapp.com/addAdmin', {
+    fetch('https://dry-savannah-42449.herokuapp.com/addAdmin', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
