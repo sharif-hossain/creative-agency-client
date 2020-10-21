@@ -14,7 +14,7 @@ const Review = () => {
     }
     const handleSubmit = (e) =>{
         review.img = loggedInUser.img;
-        fetch('https://dry-savannah-42449.herokuapp.com/addReview', {
+        fetch('https://calm-lake-70490.herokuapp.com/addReview', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

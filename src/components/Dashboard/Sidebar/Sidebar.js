@@ -9,7 +9,7 @@ const Sidebar = () => {
 
     // useEffect(() => {
         
-    //     fetch('https://dry-savannah-42449.herokuapp.com/isAdmin', {
+    //     fetch('https://calm-lake-70490.herokuapp.com/isAdmin', {
     //         method: 'POST',
     //         headers: { 'Content-Type': 'application/json' },
     //         body: JSON.stringify( {email:loggedInUser})
@@ -28,7 +28,7 @@ const Sidebar = () => {
                 <img style={{height:'50px'}} src={logo} className="img-fluid" alt="" />
             </div>
                 {
-                    //  !isAdmin && 
+                      !isAdmin && 
                     <div className="menu">
                     <Link to="/dashboard/addOrder" className="menu-item d-flex align-items-center mb-3">
                         
@@ -46,7 +46,7 @@ const Sidebar = () => {
                 }
 
                 {
-                    //  isAdmin && 
+                      isAdmin && 
                     <div className="menu">
                     <Link to="/dashboard/AllService" className="menu-item d-flex align-items-center mb-3">
                         

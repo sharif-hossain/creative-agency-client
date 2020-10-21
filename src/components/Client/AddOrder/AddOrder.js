@@ -26,7 +26,7 @@ const AddOrder = () => {
         formData.append('projectDetail', orderInfo.projectDetail);
         formData.append('price', orderInfo.price);
         formData.append('orderId', id);
-        fetch('https://dry-savannah-42449.herokuapp.com/addOrder', {
+        fetch('https://calm-lake-70490.herokuapp.com/addOrder', {
             method: 'POST',
            
             body: formData
