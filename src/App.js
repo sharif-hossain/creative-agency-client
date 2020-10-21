@@ -24,23 +24,6 @@ export const UserContext = createContext();
 function App() {
   const [loggedInUser, setLoggedInUser] = useState({});
 
-  if (firebase.apps.length === 0) {
-    firebase.initializeApp(firebaseConfig);
-  }
-  useEffect(() => { 
-    firebase.auth().onAuthStateChanged(function (user) {
-      if (user) {
-        const newSignInUser = { };
-        newSignInUser.name = user.displayName;
-        newSignInUser.email = user.email;
-        newSignInUser.img = user.photoURL;
-        setLoggedInUser(newSignInUser);
-      } else {
-        // No user is signed in.
-      }
-    });
-  }, [])
-
   return (
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
         <Router>
