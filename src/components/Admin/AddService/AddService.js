@@ -20,7 +20,7 @@ const AddService = () => {
         formData.append('file', file);
         formData.append('title', addService.title);
         formData.append('description', addService.description);
-        fetch('http://localhost:5000/addService',{
+        fetch('https://dry-savannah-42449.herokuapp.com/addService',{
             method:'POST',
             // headers: {
             //     'Content-type': 'application/json; charset=UTF-8',

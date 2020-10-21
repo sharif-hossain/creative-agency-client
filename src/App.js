@@ -17,6 +17,7 @@ import Login from './components/Login/Login';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import * as firebase from "firebase/app";
 import firebaseConfig from './components/Login/firebase.config';
+import NotFound from './components/NotFound/NotFound';
 
 export const UserContext = createContext();
 
@@ -74,8 +75,8 @@ function App() {
           <PrivateRoute path="/dashboard/make-admin">
             <AdAdmin></AdAdmin>
           </PrivateRoute>
-          <Route path="/addService">
-            <AddService></AddService>
+          <Route path="*">
+            <NotFound></NotFound>
           </Route>
         </Switch>
       </Router>

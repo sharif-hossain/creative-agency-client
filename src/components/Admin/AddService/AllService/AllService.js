@@ -10,7 +10,7 @@ const AllService = () => {
     const options = ['Pending', 'On going', 'Done'];
   console.log(services)
   useEffect(() => {
-    fetch('http://localhost:5000/allServices')
+    fetch('https://dry-savannah-42449.herokuapp.com/allServices')
         .then(response => response.json())
         .then(data => {
             setServices(data);
