@@ -5,10 +5,10 @@ import GetReview from './GetReview';
 const ReviewList = () => {
     const [review, setReview] = useState([]);
     useEffect(()=>{
-        fetch('https://dry-savannah-42449.herokuapp.com/getReview')
+        fetch('http://dry-savannah-42449.herokuapp.com/getReview')
         .then(res => res.json())
         .then(data => setReview(data))
-    })
+    },[])
     return (
         <div className="container">
             <div className="text-center mt-5">

@@ -7,20 +7,20 @@ const Sidebar = () => {
     const { loggedInUser, setLoggedInUser } = useContext(UserContext);
     const [isAdmin, setIsAdmin] = useState(false);
 
-    useEffect(() => {
+    // useEffect(() => {
         
-        fetch('https://dry-savannah-42449.herokuapp.com/isAdmin', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify( {email:loggedInUser})
+    //     fetch('http://dry-savannah-42449.herokuapp.com/isAdmin', {
+    //         method: 'POST',
+    //         headers: { 'Content-Type': 'application/json' },
+    //         body: JSON.stringify( {email:loggedInUser})
            
-        })
-            .then(res => res.json())
-            .then(result => {
-                setIsAdmin(result)
-            })
-            console.log(loggedInUser)
-    }, []);
+    //     })
+    //         .then(res => res.json())
+    //         .then(result => {
+    //             setIsAdmin(result)
+    //         })
+    //         console.log(loggedInUser)
+    // }, []);
 
     return (
         <div className="sidebar container my-2">
@@ -28,7 +28,7 @@ const Sidebar = () => {
                 <img style={{height:'50px'}} src={logo} className="img-fluid" alt="" />
             </div>
                 {
-                     !isAdmin && 
+                    //  !isAdmin && 
                     <div className="menu">
                     <Link to="/dashboard/addOrder" className="menu-item d-flex align-items-center mb-3">
                         
@@ -46,7 +46,7 @@ const Sidebar = () => {
                 }
 
                 {
-                     isAdmin && 
+                    //  isAdmin && 
                     <div className="menu">
                     <Link to="/dashboard/AllService" className="menu-item d-flex align-items-center mb-3">
                         
