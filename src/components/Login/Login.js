@@ -5,7 +5,6 @@ import { useHistory, useLocation } from 'react-router-dom';
 import './login.css';
 import * as firebase from "firebase/app";
 import { UserContext } from '../../App';
-// import { firebaseConfig } from './firebaseConfig';
 import "firebase/auth";
 import firebaseConfig from './firebase.config';
 import logo from  '../../images/logos/logo.png'
