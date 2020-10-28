@@ -1,7 +1,8 @@
 
 # Creative Agency Client
 
-## Description : * Creative Agency is a e-commerce development service website where a customer can order for a web site design, mobile app development, andriod and ios app development.*
+## Description : 
+* Creative Agency is a e-commerce development service website where a customer can order for a web site design, mobile app development, andriod and ios app development.*
 
 ## Key Features :
 
@@ -14,3 +15,5 @@
 1. Add a service
 1. Check all ordered service
 1.Delete a service
+
+## Live site link : https://creative-agency-11.netlify.app/
